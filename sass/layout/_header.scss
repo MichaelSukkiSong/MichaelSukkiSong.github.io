@@ -1,0 +1,19 @@
+.header {
+  height: 100rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-6, 0.6),
+      rgba($color-primary-6, 0.6)
+    ),
+    url('/img/photo-1481966115753-963394378f23.avif');
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+
+  position: relative;
+
+  &__text {
+    @include absCenter;
+    text-align: center;
+  }
+}

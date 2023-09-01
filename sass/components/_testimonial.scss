@@ -1,0 +1,77 @@
+.testimonial {
+  position: absolute;
+  left: 25%;
+  width: 50%;
+  height: 40rem;
+  background-color: $color-white;
+  clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+
+  &:first-child {
+    animation: testimonial-animation 12s infinite;
+  }
+  &:nth-child(2) {
+    animation: testimonial-animation 12s infinite;
+    animation-delay: 3s;
+  }
+  &:nth-child(3) {
+    animation: testimonial-animation 12s infinite;
+    animation-delay: 6s;
+  }
+  &:nth-child(4) {
+    animation: testimonial-animation 12s infinite;
+    animation-delay: 9s;
+  }
+
+  &-container {
+    position: relative;
+    height: 40rem;
+    width: 100%;
+    text-align: center;
+    filter: drop-shadow(0 1rem 2rem rgba($color-black, 0.2));
+  }
+
+  &__text {
+    height: 66.666%;
+    padding: 100px 20px;
+    font-size: $default-font-size;
+    margin-top: 2rem;
+
+    position: relative;
+  }
+
+  &__image {
+    width: 100%;
+    height: 6rem;
+    border-radius: 50%;
+
+    &-box {
+      position: absolute;
+      top: 0rem;
+      left: 20rem;
+    }
+  }
+
+  &__author-box {
+    height: 33.334%;
+    position: relative;
+  }
+
+  &__author {
+    position: absolute;
+    top: 2rem;
+    left: 28rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+}
+
+.la-quote-left {
+  font-size: 64px;
+  width: 100%;
+  text-align: left;
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+}

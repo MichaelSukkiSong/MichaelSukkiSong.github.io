@@ -1,0 +1,32 @@
+.u-center-text {
+  text-align: center !important;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important;
+}
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important;
+}
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important;
+}
+
+.u-color-white {
+  color: $color-white !important;
+}
+
+.u-color-grey {
+  color: $color-grey-5 !important;
+}
+
+.u-no-hover {
+  &:hover {
+    transform: none !important;
+    text-shadow: none !important;
+  }
+}
+
+.u-borderTop-none {
+  border-top: none !important;
+}

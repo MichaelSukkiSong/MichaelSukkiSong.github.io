@@ -1,0 +1,46 @@
+.footer {
+  height: 40vh;
+  padding: 8rem 0;
+  background-color: $color-grey-1;
+
+  &__infobox {
+    float: left;
+    width: 33%;
+    height: 6vh;
+    border-top: 1px solid #000;
+    margin-left: 2rem;
+
+    position: relative;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+
+  &__infolist {
+    @include absCenter;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__infoitem {
+    float: left;
+    width: 33.333%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  &__infolink {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: $default-font-size;
+    transition: all 0.2s;
+    display: inline-block;
+    color: $color-grey-8;
+
+    &:hover {
+      transform: scale(1.2) rotate(8deg);
+      box-shadow: 2px 2px 4px rgba($color-black, 0.2);
+    }
+  }
+}

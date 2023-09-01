@@ -1,0 +1,76 @@
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveInBottom_projectSection {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-6rem);
+  }
+  50% {
+    transform: translateY(-12rem);
+  }
+  75% {
+    transform: translateY(-18rem);
+  }
+  100% {
+    transform: translateY(-23.3rem);
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes testimonial-animation {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  43% {
+    opacity: 0;
+  }
+}
+
+@keyframes highlight-skills {
+  0% {
+    background-size: 2000%;
+  }
+  25% {
+    background-size: 1500%;
+  }
+  50% {
+    background-size: 1000%;
+  }
+  75% {
+    background-size: 500%;
+  }
+  100% {
+    background-size: 100%;
+    color: $color-white;
+    transform: translateX(0.5rem);
+  }
+}

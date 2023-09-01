@@ -1,0 +1,55 @@
+.section-skills {
+  height: 90rem;
+
+  background-color: $color-grey-0;
+  padding: 25rem 0;
+  margin-top: -10rem;
+
+  clip-path: polygon(50% 10rem, 100% 0, 100% 90rem, 50% 100rem, 0 90rem, 0 0);
+}
+
+.section-projects {
+  height: 120rem;
+
+  padding: 25rem 0;
+  margin-top: -10rem;
+
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-6, 0.6),
+      rgba($color-primary-6, 0.6)
+    ),
+    url('/img/photo-1614741118887-7a4ee193a5fa.avif');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+
+  clip-path: polygon(50% 10rem, 100% 0, 100% 110rem, 50% 120rem, 0 110rem, 0 0);
+}
+
+.section-testimonials {
+  height: 100rem;
+
+  padding: 25rem 0;
+  margin-top: -10rem;
+
+  position: relative;
+
+  clip-path: polygon(50% 10rem, 100% 0, 100% 90rem, 50% 100rem, 0 90rem, 0 0);
+  overflow: hidden;
+}
+
+.section-contact {
+  height: 100rem;
+
+  padding: 25rem 0;
+  margin-top: -10rem;
+
+  background-color: $color-primary-9;
+
+  clip-path: polygon(50% 10rem, 100% 0, 100% 100%, 0 100%, 0 0);
+
+  @include respond(big-desktop) {
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+}
