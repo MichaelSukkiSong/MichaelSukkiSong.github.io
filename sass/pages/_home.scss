@@ -3,51 +3,109 @@
 
   background-color: $color-grey-0;
   padding: 25rem 0;
-  margin-top: -10rem;
+  margin-top: -35rem;
 
   clip-path: polygon(50% 10rem, 100% 0, 100% 90rem, 50% 100rem, 0 90rem, 0 0);
+
+  @include respond(tab-land) {
+    clip-path: none;
+    padding: 25rem 0;
+
+    margin-top: -36rem;
+  }
+  @include respond(tab-port) {
+    clip-path: none;
+    padding: 35rem 0;
+
+    margin-top: -37.5rem;
+  }
+
+  @include respond(phone) {
+    clip-path: none;
+    padding: 35rem 0;
+
+    margin-top: -37.5rem;
+  }
 }
 
 .section-projects {
-  height: 90rem;
+  height: 120rem;
 
   padding: 25rem 0;
   margin-top: -10rem;
 
-  background-image: linear-gradient(
-      to right bottom,
-      rgba($color-primary-6, 0.6),
-      rgba($color-primary-6, 0.6)
-    ),
-    url('/img/photo-1614741118887-7a4ee193a5fa.avif');
-  background-size: cover;
-  background-position: center;
   text-align: center;
+  overflow: hidden;
+  position: relative;
+  // background-color: aqua;
 
   clip-path: polygon(50% 10rem, 100% 0, 100% 80rem, 50% 90rem, 0 80rem, 0 0);
+
+  @include respond(tab-land) {
+    clip-path: none;
+  }
+
+  @include respond(tab-port) {
+    clip-path: none;
+  }
+  @include respond(phone) {
+    padding: 12rem 0;
+    clip-path: none;
+  }
 }
 
 .section-testimonials {
   height: 100rem;
 
   padding: 25rem 0;
-  margin-top: -10rem;
+  margin-top: -46rem;
 
   position: relative;
 
   clip-path: polygon(50% 10rem, 100% 0, 100% 90rem, 50% 100rem, 0 90rem, 0 0);
   overflow: hidden;
+
+  @include respond(tab-land) {
+    clip-path: none;
+    margin-top: -46rem;
+  }
+  @include respond(tab-port) {
+    clip-path: none;
+    margin-top: -57rem;
+    padding: 10rem 0;
+  }
+  @include respond(phone) {
+    clip-path: none;
+    margin-top: -80rem;
+    padding: 6rem 0;
+  }
 }
 
 .section-contact {
-  height: 100rem;
+  height: 120rem;
 
   padding: 25rem 0;
-  margin-top: -10rem;
+  margin-top: -24rem;
 
   background-color: $color-primary-9;
 
   clip-path: polygon(50% 10rem, 100% 0, 100% 100%, 0 100%, 0 0);
+
+  @include respond(tab-land) {
+    clip-path: none;
+    margin-top: -26rem;
+  }
+
+  @include respond(tab-port) {
+    clip-path: none;
+    margin-top: -37.5rem;
+    padding: 12rem 0;
+  }
+  @include respond(tab-port) {
+    clip-path: none;
+    margin-top: -58.5rem;
+    padding: 12rem 0;
+  }
 
   @include respond(big-desktop) {
     clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%, 0 0);

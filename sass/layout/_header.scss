@@ -1,16 +1,19 @@
 .header {
   height: 100rem;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba($color-primary-6, 0.6),
-      rgba($color-primary-6, 0.6)
-    ),
-    url('/img/photo-1481966115753-963394378f23.avif');
-  background-size: cover;
-  background-position: center;
   clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
 
   position: relative;
+  overflow: hidden;
+
+  @include respond(tab-port) {
+    height: 80rem;
+  }
+
+  @include respond(phone) {
+    height: 60rem;
+
+    overflow: visible;
+  }
 
   &__text {
     @include absCenter;

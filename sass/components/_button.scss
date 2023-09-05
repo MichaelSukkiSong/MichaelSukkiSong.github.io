@@ -36,6 +36,10 @@
     animation: moveInBottom 1s ease-out 0.8s;
     animation-fill-mode: backwards;
   }
+
+  &--shadow {
+    box-shadow: 2px 2px 5px $color-grey-6;
+  }
 }
 
 .btn-text {
@@ -48,7 +52,6 @@
     letter-spacing: 2px;
     color: $color-white;
     border-bottom: 1px solid $color-white;
-    margin-top: 5rem;
     padding: 6px 6px;
     transition: all 0.4s;
   }

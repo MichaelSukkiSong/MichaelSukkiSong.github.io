@@ -8,6 +8,19 @@
   opacity: 0;
   transition: opacity 1s ease-in-out;
 
+  @include respond(tab-land) {
+    clip-path: none;
+    height: 35rem;
+  }
+  @include respond(tab-port) {
+    clip-path: none;
+    height: 25rem;
+  }
+  @include respond(phone) {
+    clip-path: none;
+    height: 25rem;
+  }
+
   &:first-child {
     animation: testimonial-animation 12s infinite;
   }
@@ -39,6 +52,20 @@
     margin-top: 2rem;
 
     position: relative;
+
+    @include respond(tab-land) {
+      padding: 80px 15px;
+      margin-top: 0;
+    }
+    @include respond(tab-port) {
+      padding: 65px 10px;
+      margin-top: 0;
+    }
+    @include respond(phone) {
+      padding: 70px 5px;
+      margin-top: 0;
+      font-size: $default-font-size-small;
+    }
   }
 
   &__image {

@@ -3,6 +3,19 @@
   height: 22.5rem;
   overflow: hidden;
   border-radius: 6px;
+  box-shadow: 15px 15px 30px $color-grey-7;
+
+  @include respond(tab-land) {
+    height: 16rem;
+  }
+
+  @include respond(tab-port) {
+    height: 14rem;
+  }
+
+  @include respond(phone) {
+    height: 7rem;
+  }
 
   &__img {
     width: 100%;
@@ -37,7 +50,12 @@
   font-size: 6rem;
   display: inline-block;
   margin: 0 1rem;
-  color: $color-grey-1;
+  color: $color-grey-5;
+  transition: all 0.2s;
+
+  &:hover {
+    color: $color-grey-0;
+  }
 
   &-box {
     width: 100%;
