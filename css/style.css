@@ -39,7 +39,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
     transform: translateY(-18rem);
   }
   100% {
-    transform: translateY(-23.3rem);
+    transform: translateY(-23rem);
   }
 }
 @keyframes moveInTop {
@@ -115,7 +115,6 @@ html {
 body {
   box-sizing: border-box;
   padding: 3rem;
-  overflow-x: hidden;
 }
 @media only screen and (max-width: 75em) {
   body {
@@ -170,7 +169,7 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .heading-primary--main {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
@@ -253,7 +252,19 @@ body {
 }
 .background-video__content {
   width: 100%;
-  height: 100%;
+  height: auto;
+}
+@media (min-aspect-ratio: 16/9) {
+  .background-video__content {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .background-video__content {
+    width: auto;
+    height: 100%;
+  }
 }
 
 .btn, .btn:link, .btn:visited {
@@ -411,29 +422,13 @@ body {
   border-radius: 6px;
   box-shadow: 15px 15px 30px #495057;
 }
-@media only screen and (max-width: 75em) {
-  .project-card {
-    height: 16rem;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .project-card {
-    height: 14rem;
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .project-card {
-    height: 7rem;
-  }
-}
 .project-card__img {
   width: 100%;
   height: 100%;
-  max-height: 25rem;
 }
 .project-card__hover {
   width: 100%;
-  height: 25rem;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 9999;
   transition: all 1s;
@@ -457,6 +452,16 @@ body {
   margin: 0 1rem;
   color: #adb5bd;
   transition: all 0.2s;
+}
+@media only screen and (max-width: 56.25em) {
+  .interaction-icon {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .interaction-icon {
+    font-size: 3rem;
+  }
 }
 .interaction-icon:hover {
   color: #f8f9fa;
@@ -543,19 +548,11 @@ body {
 }
 @media only screen and (max-width: 75em) {
   .testimonial {
-    clip-path: none;
     height: 35rem;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .testimonial {
-    clip-path: none;
-    height: 25rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
   .testimonial {
-    clip-path: none;
     height: 25rem;
   }
 }
@@ -617,6 +614,11 @@ body {
   top: 0rem;
   left: 20rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .testimonial__image-box {
+    left: 10rem;
+  }
+}
 .testimonial__author-box {
   height: 33.334%;
   position: relative;
@@ -628,6 +630,11 @@ body {
   font-size: 1.4rem;
   font-weight: 300;
 }
+@media only screen and (max-width: 37.5em) {
+  .testimonial__author {
+    left: 18rem;
+  }
+}
 
 .la-quote-left {
   font-size: 64px;
@@ -636,6 +643,16 @@ body {
   position: absolute;
   top: 2rem;
   left: 4rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .la-quote-left {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .la-quote-left {
+    font-size: 35px;
+  }
 }
 
 .footer {
@@ -737,15 +754,9 @@ body {
   position: relative;
   overflow: hidden;
 }
-@media only screen and (max-width: 56.25em) {
-  .header {
-    height: 80rem;
-  }
-}
 @media only screen and (max-width: 37.5em) {
   .header {
-    height: 60rem;
-    overflow: visible;
+    width: 100%;
   }
 }
 .header__text {
@@ -889,28 +900,6 @@ body {
   margin-top: -35rem;
   clip-path: polygon(50% 10rem, 100% 0, 100% 90rem, 50% 100rem, 0 90rem, 0 0);
 }
-@media only screen and (max-width: 75em) {
-  .section-skills {
-    clip-path: none;
-    padding: 25rem 0;
-    margin-top: -36rem;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .section-skills {
-    clip-path: none;
-    padding: 35rem 0;
-    margin-top: -37.5rem;
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .section-skills {
-    clip-path: none;
-    padding: 35rem 0;
-    margin-top: -37.5rem;
-  }
-}
-
 .section-projects {
   height: 120rem;
   padding: 25rem 0;
@@ -920,23 +909,6 @@ body {
   position: relative;
   clip-path: polygon(50% 10rem, 100% 0, 100% 80rem, 50% 90rem, 0 80rem, 0 0);
 }
-@media only screen and (max-width: 75em) {
-  .section-projects {
-    clip-path: none;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .section-projects {
-    clip-path: none;
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .section-projects {
-    padding: 12rem 0;
-    clip-path: none;
-  }
-}
-
 .section-testimonials {
   height: 100rem;
   padding: 25rem 0;
@@ -945,53 +917,12 @@ body {
   clip-path: polygon(50% 10rem, 100% 0, 100% 90rem, 50% 100rem, 0 90rem, 0 0);
   overflow: hidden;
 }
-@media only screen and (max-width: 75em) {
-  .section-testimonials {
-    clip-path: none;
-    margin-top: -46rem;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .section-testimonials {
-    clip-path: none;
-    margin-top: -57rem;
-    padding: 10rem 0;
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .section-testimonials {
-    clip-path: none;
-    margin-top: -80rem;
-    padding: 6rem 0;
-  }
-}
-
 .section-contact {
   height: 120rem;
   padding: 25rem 0;
   margin-top: -24rem;
   background-color: #c92a2a;
   clip-path: polygon(50% 10rem, 100% 0, 100% 100%, 0 100%, 0 0);
-}
-@media only screen and (max-width: 75em) {
-  .section-contact {
-    clip-path: none;
-    margin-top: -26rem;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .section-contact {
-    clip-path: none;
-    margin-top: -37.5rem;
-    padding: 12rem 0;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .section-contact {
-    clip-path: none;
-    margin-top: -58.5rem;
-    padding: 12rem 0;
-  }
 }
 @media only screen and (min-width: 112.5em) {
   .section-contact {

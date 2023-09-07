@@ -9,15 +9,11 @@
   transition: opacity 1s ease-in-out;
 
   @include respond(tab-land) {
-    clip-path: none;
     height: 35rem;
   }
   @include respond(tab-port) {
-    clip-path: none;
-    height: 25rem;
   }
   @include respond(phone) {
-    clip-path: none;
     height: 25rem;
   }
 
@@ -77,6 +73,10 @@
       position: absolute;
       top: 0rem;
       left: 20rem;
+
+      @include respond(phone) {
+        left: 10rem;
+      }
     }
   }
 
@@ -91,6 +91,10 @@
     left: 28rem;
     font-size: 1.4rem;
     font-weight: 300;
+
+    @include respond(phone) {
+      left: 18rem;
+    }
   }
 }
 
@@ -101,4 +105,12 @@
   position: absolute;
   top: 2rem;
   left: 4rem;
+
+  @include respond(tab-port) {
+    font-size: 50px;
+  }
+
+  @include respond(phone) {
+    font-size: 35px;
+  }
 }
