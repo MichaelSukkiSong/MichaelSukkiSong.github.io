@@ -6,8 +6,10 @@
   overflow: hidden;
 
   @include respond(tab-land) {
+    clip-path: none;
   }
   @include respond(tab-port) {
+    clip-path: none;
   }
   @include respond(phone) {
     width: 100%;

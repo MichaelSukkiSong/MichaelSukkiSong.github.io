@@ -18,6 +18,12 @@
     transition: all 1s;
     position: relative;
     display: none;
+
+    & > div {
+      font-size: $default-font-size-1;
+      color: white;
+      padding-top: 15px;
+    }
   }
 
   &:hover img {

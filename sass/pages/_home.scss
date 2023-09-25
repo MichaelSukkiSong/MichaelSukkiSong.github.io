@@ -8,10 +8,14 @@
   clip-path: polygon(50% 10rem, 100% 0, 100% 90rem, 50% 100rem, 0 90rem, 0 0);
 
   @include respond(tab-land) {
+    clip-path: none;
+    margin-top: -15rem;
   }
   @include respond(tab-port) {
+    clip-path: none;
   }
   @include respond(phone) {
+    clip-path: none;
   }
 }
 
@@ -28,10 +32,13 @@
   clip-path: polygon(50% 10rem, 100% 0, 100% 80rem, 50% 90rem, 0 80rem, 0 0);
 
   @include respond(tab-land) {
+    clip-path: none;
   }
   @include respond(tab-port) {
+    clip-path: none;
   }
   @include respond(phone) {
+    clip-path: none;
   }
 }
 
@@ -39,18 +46,21 @@
   height: 100rem;
 
   padding: 25rem 0;
-  margin-top: -46rem;
+  margin-top: -48rem;
 
+  overflow: hidden;
   position: relative;
 
-  clip-path: polygon(50% 10rem, 100% 0, 100% 90rem, 50% 100rem, 0 90rem, 0 0);
-  overflow: hidden;
+  clip-path: polygon(50% 10rem, 100% 0, 100% 100rem, 50% 100rem, 0 100rem, 0 0);
 
   @include respond(tab-land) {
+    clip-path: none;
   }
   @include respond(tab-port) {
+    clip-path: none;
   }
   @include respond(phone) {
+    clip-path: none;
   }
 }
 
@@ -62,13 +72,14 @@
 
   background-color: $color-primary-9;
 
-  clip-path: polygon(50% 10rem, 100% 0, 100% 100%, 0 100%, 0 0);
-
   @include respond(tab-land) {
+    clip-path: none;
   }
   @include respond(tab-port) {
+    clip-path: none;
   }
   @include respond(phone) {
+    clip-path: none;
   }
 
   @include respond(big-desktop) {
