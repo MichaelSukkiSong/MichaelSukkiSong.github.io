@@ -49,31 +49,35 @@
     />
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>MSS tech</title>
+    <title>Michael Song</title>
   </head>
   <body>
     <div class="navigation">
       <div class="navigation__logobox">
-        <a href="#" class="navigation__logolink">
-          <ion-icon name="logo-react" class="navigation__logo"> </ion-icon>
-        </a>
+        <a href="#" class="navigation__logolink"> MICHAEL SONG </a>
       </div>
 
       <div class="navigation__nav">
         <div class="navigation__list">
           <div class="navigation__item">
-            <a href="#section-skills" class="navigation__link">skills</a>
+            <a href="#section-skills" class="navigation__link">
+              <span class="navigation__link-box">skills</span>
+            </a>
           </div>
           <div class="navigation__item">
-            <a href="#section-projects" class="navigation__link">projects</a>
+            <a href="#section-projects" class="navigation__link">
+              <span class="navigation__link-box"> projects </span>
+            </a>
           </div>
           <div class="navigation__item">
-            <a href="#section-testimonials" class="navigation__link"
-              >testimonials</a
-            >
+            <a href="#section-testimonials" class="navigation__link">
+              <span class="navigation__link-box"> testimonials </span>
+            </a>
           </div>
           <div class="navigation__item">
-            <a href="#section-contact" class="navigation__link">contact</a>
+            <a href="#section-contact" class="navigation__link">
+              <span class="navigation__link-box"> contact </span>
+            </a>
           </div>
         </div>
       </div>
@@ -115,7 +119,7 @@
     </div>
 
     <header class="header" id="header">
-      <div class="background-video">
+      <!-- <div class="background-video">
         <video
           class="background-video__content"
           poster="/img/Screen Shot 2023-09-06 at 3.35.41 PM.png"
@@ -129,18 +133,25 @@
           />
           Your browser does not support the video tag.
         </video>
-      </div>
+      </div> -->
+      <div id="header__typewriter"></div>
 
       <div class="header__text">
         <h1 class="heading-primary u-margin-bottom-small">
-          <span class="heading-primary--sub">build your dream with</span>
-          <span class="heading-primary--main">MSS Technologies</span>
+          <!-- <span class="heading-primary--sub">build your dream with</span>
+          <span class="heading-primary--main">MSS Technologies</span> -->
         </h1>
 
         <a
+          href="https://drive.google.com/file/d/1ULo4rcf3e81H12Rnu9NrLB3CvSsbhocm/view?usp=drive_link"
+          target="_blank"
+          class="btn btn--primary-9 btn--animated btn--shadow u-margin-right-medium"
+          >Resume
+        </a>
+        <a
           href="#section-projects"
-          class="btn btn--white btn--animated btn--shadow"
-          >Go to Projects
+          class="btn btn--primary-0 btn--animated btn--shadow btn--border"
+          >Projects
         </a>
       </div>
     </header>
@@ -478,8 +489,8 @@
 
     <footer class="footer" id="footer">
       <div class="u-margin-bottom-big u-center-text">
-        <h2 class="heading-secondary u-color-grey u-no-hover">
-          MSS Technologies
+        <h2 class="heading-secondary u-no-hover">
+          Developed with ♥️ by Michael Song @ 2023
         </h2>
       </div>
 
@@ -544,34 +555,8 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const backToTopButton = document.getElementById('back-to-top');
-        const body = document.body;
-
-        // Function to toggle the visibility of the back-to-top button
-        function toggleBackToTopButton() {
-          if (window.scrollY > 300) {
-            backToTopButton.style.opacity = '1';
-          } else {
-            backToTopButton.style.opacity = '0';
-          }
-        }
-
-        // Function to scroll to the top of the page
-        function scrollToTop() {
-          if (window.scrollY > 0) {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          }
-        }
-
-        // Add an event listener to scroll and toggle the button visibility
-        window.addEventListener('scroll', toggleBackToTopButton);
-
-        // Add a click event listener to scroll to the top when the button is clicked
-        backToTopButton.addEventListener('click', scrollToTop);
-      });
-    </script>
+    <script type="module" src="myscripts.js"></script>
   </body>
 </html>

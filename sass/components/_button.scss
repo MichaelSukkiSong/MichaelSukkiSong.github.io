@@ -24,12 +24,32 @@
 
   &--white {
     background-color: #fff;
+    color: $color-grey-9;
+  }
+
+  &--primary-0 {
+    background-color: $color-primary-0;
     color: $color-grey-8;
+
+    &:hover {
+      background-color: $color-primary-1;
+      color: $color-grey-9;
+    }
   }
 
   &--primary-3 {
     background-color: $color-primary-3;
     color: $color-white;
+  }
+
+  &--primary-9 {
+    background-color: $color-primary-9;
+    color: $color-grey-1;
+
+    &:hover {
+      background-color: $color-primary-7;
+      color: $color-white;
+    }
   }
 
   &--animated {
@@ -38,7 +58,11 @@
   }
 
   &--shadow {
-    box-shadow: 2px 2px 5px $color-grey-6;
+    box-shadow: 5px 5px 10px $color-grey-6;
+  }
+
+  &--border {
+    border: 1px solid #000 !important;
   }
 }
 

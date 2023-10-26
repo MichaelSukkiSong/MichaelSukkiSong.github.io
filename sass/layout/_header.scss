@@ -1,9 +1,10 @@
 .header {
   height: 100rem;
   clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
-
   position: relative;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding: 25rem 0;
 
   @include respond(tab-land) {
     clip-path: none;
@@ -18,5 +19,23 @@
   &__text {
     @include absCenter;
     text-align: center;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+}
+
+#header__typewriter {
+  height: 10rem;
+  width: 75%;
+  font-size: 5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include respond(phone) {
+    font-size: 2rem;
   }
 }

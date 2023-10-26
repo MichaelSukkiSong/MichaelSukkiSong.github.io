@@ -1,5 +1,5 @@
 .navigation {
-  background-color: $color-grey-3;
+  background-color: $color-grey-8;
   height: 6vh;
 
   @include respond(phone) {
@@ -9,7 +9,7 @@
   &__logobox {
     float: left;
 
-    width: 6%;
+    width: 10%;
     height: 100%;
     position: relative;
 
@@ -20,9 +20,13 @@
 
   &__logolink {
     width: 100%;
-    color: $color-grey-8;
     @include absCenter;
     transition: all 0.2s;
+    color: $color-white;
+    text-decoration: none;
+    padding-left: 3rem;
+    font-weight: 600;
+    font-size: $default-font-size;
 
     &:hover {
       color: $color-grey-6;
@@ -51,6 +55,7 @@
   &__list {
     @include absCenter;
     width: 100%;
+    margin-left: 5rem;
   }
 
   &__item {
@@ -61,13 +66,21 @@
   }
 
   &__link {
+    &-box {
+      width: 100%;
+      padding: 0.8rem 0.8rem;
+
+      &:hover {
+        border-bottom: 1px solid $color-grey-3;
+      }
+    }
     &:link,
     &:visited {
       text-decoration: none;
       text-transform: uppercase;
-      font-size: $default-font-size-medium;
-      color: $color-grey-8;
+      font-size: $default-font-size-medium-2;
       transition: all 0.2s;
+      color: $color-white;
     }
 
     &:hover {
@@ -116,7 +129,7 @@
       text-decoration: none;
       text-transform: uppercase;
       font-size: $default-font-size;
-      color: $color-grey-8;
+      color: $color-grey-2;
       transition: all 0.2s;
 
       &:hover {
