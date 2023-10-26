@@ -41,8 +41,14 @@ var typewriter = new Typewriter(header__typewriter, {
 
 typewriter
   .pauseFor(50)
-  .typeString(`Hi, I'm <strong>Michael Song</strong> </br>`)
-  .typeString(`I am a <strong>Software Developer</strong> </br>`)
-  .typeString('with an <strong>Electrical Engineering</strong> background')
+  .typeString(
+    `<span style="color: #868e96;">Hi, I'm <strong><span style="color: #000;">Michael Song</span></strong></span> </br>`
+  )
+  .typeString(
+    `<span style="color: #868e96;">I am a <span style="color: #000;">Software Developer</span></span> </br>`
+  )
+  .typeString(
+    '<span style="color: #868e96;">with an <span style="color: #000;">Electrical Engineering</span> background</span>'
+  )
   .pauseFor(10000)
   .start();

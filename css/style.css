@@ -295,13 +295,13 @@ body {
 
 .btn, .btn:link, .btn:visited {
   display: inline-block;
-  padding: 2rem 4rem;
+  padding: 1.5rem 3rem;
   border-radius: 5rem;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 1.6rem;
   letter-spacing: 2px;
-  transition: all 0.2s;
+  transition: all 0.4s;
 }
 .btn:hover {
   transform: translateY(-3px);
@@ -316,22 +316,22 @@ body {
 }
 .btn--primary-0 {
   background-color: #f8f9fa;
-  color: #343a40;
+  color: #495057;
 }
 .btn--primary-0:hover {
-  background-color: #f1f3f5;
+  background-color: #fff;
   color: #212529;
 }
 .btn--primary-3 {
   background-color: #dee2e6;
   color: #fff;
 }
-.btn--primary-9 {
-  background-color: #212529;
+.btn--primary-8 {
+  background-color: #343a40;
   color: #f1f3f5;
 }
-.btn--primary-9:hover {
-  background-color: #495057;
+.btn--primary-8:hover {
+  background-color: #212529;
   color: #fff;
 }
 .btn--animated {
@@ -851,6 +851,8 @@ body {
 .navigation {
   background-color: #343a40;
   height: 6vh;
+  display: flex;
+  justify-content: space-between;
 }
 @media only screen and (max-width: 37.5em) {
   .navigation {
@@ -858,10 +860,11 @@ body {
   }
 }
 .navigation__logobox {
-  float: left;
-  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
   height: 100%;
-  position: relative;
 }
 @media only screen and (max-width: 37.5em) {
   .navigation__logobox {
@@ -870,16 +873,13 @@ body {
 }
 .navigation__logolink {
   width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   transition: all 0.2s;
   color: #fff;
   text-decoration: none;
   padding-left: 3rem;
   font-weight: 600;
   font-size: 1.6rem;
+  letter-spacing: 2px;
 }
 .navigation__logolink:hover {
   color: #868e96;
@@ -896,7 +896,8 @@ body {
   width: 50%;
   height: 100%;
   display: inline-block;
-  position: relative;
+  display: flex;
+  justify-content: center;
 }
 @media only screen and (max-width: 37.5em) {
   .navigation__nav {
@@ -905,10 +906,9 @@ body {
   }
 }
 .navigation__list {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   margin-left: 5rem;
 }
@@ -936,13 +936,12 @@ body {
   color: #868e96;
 }
 .navigation__contactbox {
-  width: 25%;
+  width: 10%;
   height: 6vh;
-  float: right;
-  margin-left: 15rem;
-  margin-right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-top: 1px solid #000;
-  position: relative;
 }
 @media only screen and (max-width: 75em) {
   .navigation__contactbox {
@@ -958,16 +957,13 @@ body {
   }
 }
 .navigation__contactlist {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
   width: 100%;
 }
 .navigation__contactitem {
   text-align: center;
   float: left;
-  width: 25%;
   margin: 0 auto;
 }
 .navigation__contactlink:link, .navigation__contactlink:visited {
