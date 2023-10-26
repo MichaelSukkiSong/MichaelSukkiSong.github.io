@@ -369,7 +369,6 @@ body {
 
 .contact-form {
   height: 75rem;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../img/photo-1487611459768-bd414656ea10.avif");
   background-size: cover;
   display: flex;
   align-items: center;
@@ -983,7 +982,7 @@ body {
 }
 
 .section-skills {
-  height: 90rem;
+  height: 100rem;
   background-color: #f8f9fa;
   padding: 25rem 0;
   margin-top: -35rem;
@@ -1006,13 +1005,12 @@ body {
 }
 
 .section-projects {
-  height: 100rem;
   padding: 25rem 0;
   margin-top: -10rem;
   text-align: center;
   overflow: hidden;
   position: relative;
-  clip-path: polygon(50% 10rem, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+  clip-path: polygon(50% 10rem, 100% 0, 100% 90rem, 50% 100%, 0 90rem, 0 0);
 }
 @media only screen and (max-width: 75em) {
   .section-projects {
@@ -1032,15 +1030,16 @@ body {
 
 .section-testimonials {
   height: 100rem;
+  background-color: #f8f9fa;
   padding: 25rem 0;
+  clip-path: polygon(50% 10rem, 100% 0, 100% 90rem, 50% 100%, 0 90rem, 0 0);
   overflow: hidden;
   position: relative;
 }
 .section-contact {
-  height: 120rem;
+  height: 100rem;
   padding: 25rem 0;
-  background-color: #ced4da;
-  clip-path: polygon(50% 10rem, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+  clip-path: polygon(50% 10rem, 100% 0, 100% 90rem, 50% 100%, 0 90rem, 0 0);
 }
 @media only screen and (max-width: 75em) {
   .section-contact {
