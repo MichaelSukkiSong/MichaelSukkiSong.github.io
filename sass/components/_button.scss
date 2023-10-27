@@ -74,18 +74,19 @@
     text-decoration: none;
     font-size: $default-font-size;
     letter-spacing: 2px;
-    color: $color-white;
+    color: $color-grey-9;
     border-bottom: 1px solid $color-white;
     padding: 6px 6px;
     transition: all 0.4s;
+    border-radius: 0;
   }
 
   &:hover {
-    background-color: $color-primary-3;
+    // background-color: $color-primary-3;
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
     color: $color-grey-8;
-    border-bottom: $color-grey-8;
+    border-bottom: 1px solid $color-grey-8;
   }
 
   &:active,
