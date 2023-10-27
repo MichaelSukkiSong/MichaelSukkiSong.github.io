@@ -447,7 +447,7 @@
 
         <div class="row">
           <div class="contact-form">
-            <iframe
+            <!-- <iframe
               src="https://docs.google.com/forms/d/e/1FAIpQLSejpkdpL5_Jckr_FOjVjeOlihglJ-UVIzooR1oteg3HxB2zjA/viewform?embedded=true"
               width="640"
               height="550"
@@ -455,20 +455,32 @@
               marginheight="0"
               marginwidth="0"
               >Loading…</iframe
-            >
-            <!-- <form class="form">
+            > -->
+            <form class="form">
               <div class="form-group">
+                <label for="name" class="label">name</label>
                 <input
                   type="text"
-                  class="title-input"
-                  name="title"
-                  placeholder="Title"
+                  class="input"
+                  name="name"
+                  placeholder="Name"
                   required
                   minlength="2"
                 />
-                <label for="title" class="title-label">title</label>
               </div>
               <div class="form-group">
+                <label for="email" class="label">Email</label>
+                <input
+                  type="email"
+                  class="input"
+                  name="email"
+                  placeholder="Email"
+                  required
+                  minlength="2"
+                />
+              </div>
+              <div class="form-group">
+                <label for="content" class="content-label">content</label>
                 <textarea
                   name="content"
                   class="content-input"
@@ -477,13 +489,12 @@
                   required
                   minlength="2"
                 ></textarea>
-                <label for="content" class="content-label">content</label>
               </div>
 
-              <div class="form-group">
-                <a href="#" class="btn btn--primary-3">Send</a>
+              <div class="form-btn">
+                <a href="#" class="btn btn--primary-8">Send</a>
               </div>
-            </form> -->
+            </form>
           </div>
         </div>
       </section>
@@ -492,7 +503,7 @@
     <footer class="footer" id="footer">
       <div class="u-margin-bottom-big u-center-text">
         <h2 class="heading-secondary u-no-hover">
-          Developed with ♥️ by Michael Song @ 2023
+          Developed with ♥️ by Michael @ 2023
         </h2>
       </div>
 
@@ -510,32 +521,32 @@
         </div>
       </div>
 
-      <div class="navigation__contactbox">
-        <div class="navigation__contactlist">
-          <div class="navigation__contactitem">
-            <a href="#section-contact" class="navigation__contactlink">
+      <div class="footer__contactbox">
+        <div class="footer__contactlist">
+          <div class="footer__contactitem">
+            <a href="#section-contact" class="footer__contactlink">
               <ion-icon name="call-outline" class="contact-icon"></ion-icon>
             </a>
           </div>
-          <div class="navigation__contactitem">
-            <a href="#section-contact" class="navigation__contactlink">
+          <div class="footer__contactitem">
+            <a href="#section-contact" class="footer__contactlink">
               <ion-icon name="mail-outline" class="contact-icon"></ion-icon>
             </a>
           </div>
-          <div class="navigation__contactitem">
+          <div class="footer__contactitem">
             <a
               href="https://github.com/MichaelSukkiSong"
-              class="navigation__contactlink"
+              class="footer__contactlink"
               target="_blank"
               rel="noopener noreferrer"
             >
               <ion-icon name="logo-github" class="contact-icon"></ion-icon>
             </a>
           </div>
-          <div class="navigation__contactitem">
+          <div class="footer__contactitem">
             <a
               href="https://www.linkedin.com/in/michael-song-231327188"
-              class="navigation__contactlink"
+              class="footer__contactlink"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -395,12 +395,10 @@ body {
 }
 
 .contact-form {
-  height: 75rem;
-  background-size: cover;
+  height: 55rem;
   display: flex;
-  align-items: center;
   justify-content: center;
-  position: relative;
+  align-items: center;
 }
 @media only screen and (max-width: 56.25em) {
   .contact-form {
@@ -414,10 +412,10 @@ body {
 }
 
 .form {
-  position: absolute;
-  top: 12rem;
-  left: 12rem;
-  width: 28%;
+  width: 50%;
+  padding: 2rem 4rem;
+  border-radius: 10px;
+  box-shadow: 15px 15px 30px #dee2e6;
 }
 @media only screen and (max-width: 56.25em) {
   .form {
@@ -430,33 +428,35 @@ body {
   }
 }
 .form-group {
+  width: 100%;
   margin-bottom: 2rem;
 }
+.form-btn {
+  float: right;
+}
 
-.title-input {
+.input {
   width: 100%;
   height: 4rem;
   outline: none;
   padding: 4px 8px;
-  border: none;
   font-size: 1.6rem;
   transition: all 0.2s;
 }
-.title-input:focus {
+.input:focus {
   border: 2px solid #343a40;
 }
-.title-input:valid {
+.input:valid {
   border: 2px solid #2f9e44;
 }
-.title-input::placeholder {
+.input::placeholder {
   color: #adb5bd;
 }
 
-.title-label {
+.label {
   display: block;
   font-size: 1.6rem;
   text-transform: uppercase;
-  opacity: 0;
 }
 
 .content-input {
@@ -464,7 +464,6 @@ body {
   height: 15rem;
   padding: 8px 8px;
   outline: none;
-  border: none;
   font-size: 1.6rem;
   transition: all 0.2s;
   resize: none;
@@ -483,7 +482,6 @@ body {
   display: block;
   font-size: 1.6rem;
   text-transform: uppercase;
-  opacity: 0;
 }
 
 .project-card {
@@ -772,6 +770,44 @@ body {
   color: #e9ecef;
 }
 .footer__infolink:hover {
+  transform: scale(1.2) rotate(8deg);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.footer__contactbox {
+  float: right;
+  width: 33%;
+  height: 6vh;
+  border-top: 1px solid #000;
+  position: relative;
+}
+@media only screen and (max-width: 37.5em) {
+  .footer__contactbox {
+    width: 100%;
+  }
+}
+.footer__contactlist {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+.footer__contactitem {
+  float: left;
+  width: 25%;
+  text-align: center;
+  margin-top: 1rem;
+}
+.footer__contactlink {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  transition: all 0.2s;
+  display: inline-block;
+  color: #e9ecef;
+}
+.footer__contactlink:hover {
   transform: scale(1.2) rotate(8deg);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
