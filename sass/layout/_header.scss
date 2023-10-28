@@ -35,6 +35,10 @@
   justify-content: center;
   align-items: center;
 
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
   @include respond(phone) {
     font-size: 2rem;
   }
