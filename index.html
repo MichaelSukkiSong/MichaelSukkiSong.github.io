@@ -456,13 +456,14 @@
               marginwidth="0"
               >Loading…</iframe
             > -->
-            <form class="form">
+            <form action="https://public.herotofu.com/v1/4a810630-752a-11ee-8bcd-4fcc9e7e7286" method="post" accept-charset="UTF-8" class="form">
               <div class="form-group">
                 <label for="name" class="label">name</label>
                 <input
                   type="text"
                   class="input"
-                  name="name"
+                  name="Name"
+                  id="name"
                   placeholder="Name"
                   required
                   minlength="2"
@@ -473,7 +474,8 @@
                 <input
                   type="email"
                   class="input"
-                  name="email"
+                  name="Email"
+                  id="email"
                   placeholder="Email"
                   required
                   minlength="2"
@@ -482,7 +484,7 @@
               <div class="form-group">
                 <label for="content" class="content-label">content</label>
                 <textarea
-                  name="content"
+                  name="Content"
                   class="content-input"
                   id="content"
                   placeholder="Enter content here."
@@ -492,7 +494,12 @@
               </div>
 
               <div class="form-btn">
-                <a href="#" class="btn btn--primary-8">Send</a>
+                <input type="submit" value="Send" class="btn btn--primary-8" />
+                <div style="text-indent:-99999px; white-space:nowrap; overflow:hidden; position:absolute;" aria-hidden="true">
+                  <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
+                </div>
+
+                <!-- <a href="#" class="btn btn--primary-8">Send</a> -->
               </div>
             </form>
           </div>
